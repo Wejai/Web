@@ -2,58 +2,28 @@ package com.cbs.demo;
 
 public class Acc
 {
-    private String Name;
+  private String secondaryIdentification;
 
-    private String SecondaryIdentification;
+  public String getSecondaryIdentification() { return this.secondaryIdentification; }
 
-    private String Identification;
+  public void setSecondaryIdentification(String secondaryIdentification) { this.secondaryIdentification = secondaryIdentification; }
 
-    private String SchemeName;
+  private String identification;
 
-    public String getName ()
-    {
-        return Name;
-    }
+  public String getIdentification() { return this.identification; }
 
-    public void setName (String Name)
-    {
-        this.Name = Name;
-    }
+  public void setIdentification(String identification) { this.identification = identification; }
 
-    public String getSecondaryIdentification ()
-    {
-        return SecondaryIdentification;
-    }
+  private String schemeName;
 
-    public void setSecondaryIdentification (String SecondaryIdentification)
-    {
-        this.SecondaryIdentification = SecondaryIdentification;
-    }
+  public String getSchemeName() { return this.schemeName; }
 
-    public String getIdentification ()
-    {
-        return Identification;
-    }
+  public void setSchemeName(String schemeName) { this.schemeName = schemeName; }
 
-    public void setIdentification (String Identification)
-    {
-        this.Identification = Identification;
-    }
+  private String name;
 
-    public String getSchemeName ()
-    {
-        return SchemeName;
-    }
+  public String getName() { return this.name; }
 
-    public void setSchemeName (String SchemeName)
-    {
-        this.SchemeName = SchemeName;
-    }
-
-    @Override
-    public String toString()
-    {
-        return "{:Name"+Name+",\n:SecondaryIdentification"+SecondaryIdentification+",\n:Identification"+Identification+",\n:SchemeName"+SchemeName+"\n}";
-    }
+  public void setName(String name) { this.name = name; }
 }
 

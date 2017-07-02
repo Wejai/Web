@@ -2,69 +2,33 @@ package com.cbs.demo;
 
 public class Beneficiary
 {
-    private CreditorAccount CreditorAccount;
+  private String accountId;
 
-    private String BeneficiaryId;
+  public String getAccountId() { return this.accountId; }
 
-    private String AccountId;
+  public void setAccountId(String accountId) { this.accountId = accountId; }
 
-    private Servicer Servicer;
+  private Servicer servicer;
 
-    private String Reference;
+  public Servicer getServicer() { return this.servicer; }
 
-    public CreditorAccount getCreditorAccount ()
-    {
-        return CreditorAccount;
-    }
+  public void setServicer(Servicer servicer) { this.servicer = servicer; }
 
-    public void setCreditorAccount (CreditorAccount CreditorAccount)
-    {
-        this.CreditorAccount = CreditorAccount;
-    }
+  private CreditorAccount creditorAccount;
 
-    public String getBeneficiaryId ()
-    {
-        return BeneficiaryId;
-    }
+  public CreditorAccount getCreditorAccount() { return this.creditorAccount; }
 
-    public void setBeneficiaryId (String BeneficiaryId)
-    {
-        this.BeneficiaryId = BeneficiaryId;
-    }
+  public void setCreditorAccount(CreditorAccount creditorAccount) { this.creditorAccount = creditorAccount; }
 
-    public String getAccountId ()
-    {
-        return AccountId;
-    }
+  private String beneficiaryId;
 
-    public void setAccountId (String AccountId)
-    {
-        this.AccountId = AccountId;
-    }
+  public String getBeneficiaryId() { return this.beneficiaryId; }
 
-    public Servicer getServicer ()
-    {
-        return Servicer;
-    }
+  public void setBeneficiaryId(String beneficiaryId) { this.beneficiaryId = beneficiaryId; }
 
-    public void setServicer (Servicer Servicer)
-    {
-        this.Servicer = Servicer;
-    }
+  private String reference;
 
-    public String getReference ()
-    {
-        return Reference;
-    }
+  public String getReference() { return this.reference; }
 
-    public void setReference (String Reference)
-    {
-        this.Reference = Reference;
-    }
-
-    @Override
-    public String toString()
-    {
-        return "{:CreditorAccount"+CreditorAccount+",\n:BeneficiaryId"+BeneficiaryId+",\nAccountId"+AccountId+",\n:Servicer"+Servicer+",\n:Reference"+Reference+"\n}";
-    }
+  public void setReference(String reference) { this.reference = reference; }
 }

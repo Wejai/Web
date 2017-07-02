@@ -2,45 +2,21 @@ package com.cbs.demo;
 
 public class CreditorAccount
 {
-    private String Name;
+  private String identification;
 
-    private String Identification;
+  public String getIdentification() { return this.identification; }
 
-    private String SchemeName;
+  public void setIdentification(String identification) { this.identification = identification; }
 
-    public String getName ()
-    {
-        return Name;
-    }
+  private String schemeName;
 
-    public void setName (String Name)
-    {
-        this.Name = Name;
-    }
+  public String getSchemeName() { return this.schemeName; }
 
-    public String getIdentification ()
-    {
-        return Identification;
-    }
+  public void setSchemeName(String schemeName) { this.schemeName = schemeName; }
 
-    public void setIdentification (String Identification)
-    {
-        this.Identification = Identification;
-    }
+  private String name;
 
-    public String getSchemeName ()
-    {
-        return SchemeName;
-    }
+  public String getName() { return this.name; }
 
-    public void setSchemeName (String SchemeName)
-    {
-        this.SchemeName = SchemeName;
-    }
-
-    @Override
-    public String toString()
-    {
-        return "{:Name"+Name+",\n:Identification"+Identification+",\n:SchemeName"+SchemeName+"\n}";
-    }
+  public void setName(String name) { this.name = name; }
 }

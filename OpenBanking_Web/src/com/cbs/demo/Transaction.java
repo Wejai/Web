@@ -1,153 +1,78 @@
 package com.cbs.demo;
 
-public class Transaction {
-	private String TransactionId;
+import java.util.Date;
 
-    private String Status;
+public class Transaction
+{
+  private String status;
 
-    private Amount Amount;
+  public String getStatus() { return this.status; }
 
-    private BankTransactionCode BankTransactionCode;
+  public void setStatus(String status) { this.status = status; }
 
-    private String TransactionInformation;
+  private String creditDebitIndicator;
 
-    private String ValueDateTime;
+  public String getCreditDebitIndicator() { return this.creditDebitIndicator; }
 
-    private String AccountId;
+  public void setCreditDebitIndicator(String creditDebitIndicator) { this.creditDebitIndicator = creditDebitIndicator; }
 
-    private ProprietaryBankTransactionCode ProprietaryBankTransactionCode;
+  private Balance balance;
 
-    private String CreditDebitIndicator;
+  public Balance getBalance() { return this.balance; }
 
-    private Balance Balance;
+  public void setBalance(Balance balance) { this.balance = balance; }
 
-    private String BookingDateTime;
+  private Date bookingDateTime;
 
-    private String TransactionReference;
+  public Date getBookingDateTime() { return this.bookingDateTime; }
 
-    public String getTransactionId ()
-    {
-        return TransactionId;
-    }
+  public void setBookingDateTime(Date bookingDateTime) { this.bookingDateTime = bookingDateTime; }
 
-    public void setTransactionId (String TransactionId)
-    {
-        this.TransactionId = TransactionId;
-    }
+  private String transactionReference;
 
-    public String getStatus ()
-    {
-        return Status;
-    }
+  public String getTransactionReference() { return this.transactionReference; }
 
-    public void setStatus (String Status)
-    {
-        this.Status = Status;
-    }
+  public void setTransactionReference(String transactionReference) { this.transactionReference = transactionReference; }
 
-    public Amount getAmount ()
-    {
-        return Amount;
-    }
+  private String accountId;
 
-    public void setAmount (Amount Amount)
-    {
-        this.Amount = Amount;
-    }
+  public String getAccountId() { return this.accountId; }
 
-    public BankTransactionCode getBankTransactionCode ()
-    {
-        return BankTransactionCode;
-    }
+  public void setAccountId(String accountId) { this.accountId = accountId; }
 
-    public void setBankTransactionCode (BankTransactionCode BankTransactionCode)
-    {
-        this.BankTransactionCode = BankTransactionCode;
-    }
+  private String transactionId;
 
-    public String getTransactionInformation ()
-    {
-        return TransactionInformation;
-    }
+  public String getTransactionId() { return this.transactionId; }
 
-    public void setTransactionInformation (String TransactionInformation)
-    {
-        this.TransactionInformation = TransactionInformation;
-    }
+  public void setTransactionId(String transactionId) { this.transactionId = transactionId; }
 
-    public String getValueDateTime ()
-    {
-        return ValueDateTime;
-    }
+  private Amount2 amount;
 
-    public void setValueDateTime (String ValueDateTime)
-    {
-        this.ValueDateTime = ValueDateTime;
-    }
+  public Amount2 getAmount() { return this.amount; }
 
-    public String getAccountId ()
-    {
-        return AccountId;
-    }
+  public void setAmount(Amount2 amount) { this.amount = amount; }
 
-    public void setAccountId (String AccountId)
-    {
-        this.AccountId = AccountId;
-    }
+  private BankTransactionCode bankTransactionCode;
 
-    public ProprietaryBankTransactionCode getProprietaryBankTransactionCode ()
-    {
-        return ProprietaryBankTransactionCode;
-    }
+  public BankTransactionCode getBankTransactionCode() { return this.bankTransactionCode; }
 
-    public void setProprietaryBankTransactionCode (ProprietaryBankTransactionCode ProprietaryBankTransactionCode)
-    {
-        this.ProprietaryBankTransactionCode = ProprietaryBankTransactionCode;
-    }
+  public void setBankTransactionCode(BankTransactionCode bankTransactionCode) { this.bankTransactionCode = bankTransactionCode; }
 
-    public String getCreditDebitIndicator ()
-    {
-        return CreditDebitIndicator;
-    }
+  private String transactionInformation;
 
-    public void setCreditDebitIndicator (String CreditDebitIndicator)
-    {
-        this.CreditDebitIndicator = CreditDebitIndicator;
-    }
+  public String getTransactionInformation() { return this.transactionInformation; }
 
-    public Balance getBalance ()
-    {
-        return Balance;
-    }
+  public void setTransactionInformation(String transactionInformation) { this.transactionInformation = transactionInformation; }
 
-    public void setBalance (Balance Balance)
-    {
-        this.Balance = Balance;
-    }
+  private Date valueDateTime;
 
-    public String getBookingDateTime ()
-    {
-        return BookingDateTime;
-    }
+  public Date getValueDateTime() { return this.valueDateTime; }
 
-    public void setBookingDateTime (String BookingDateTime)
-    {
-        this.BookingDateTime = BookingDateTime;
-    }
+  public void setValueDateTime(Date valueDateTime) { this.valueDateTime = valueDateTime; }
 
-    public String getTransactionReference ()
-    {
-        return TransactionReference;
-    }
+  private ProprietaryBankTransactionCode proprietaryBankTransactionCode;
 
-    public void setTransactionReference (String TransactionReference)
-    {
-        this.TransactionReference = TransactionReference;
-    }
+  public ProprietaryBankTransactionCode getProprietaryBankTransactionCode() { return this.proprietaryBankTransactionCode; }
 
-    @Override
-    public String toString()
-    {
-        return "{:TransactionId"+TransactionId+",\n:Status"+Status+",\n:Amount"+Amount+",\n:BankTransactionCode"+BankTransactionCode+",\n:TransactionInformation"+TransactionInformation+",\n:ValueDateTime"+ValueDateTime+",\n:AccountId"+AccountId+",\n:ProprietaryBankTransactionCode"+ProprietaryBankTransactionCode+",\n:CreditDebitIndicator"+CreditDebitIndicator+",\n:Balance"+Balance+",\n:BookingDateTime"+BookingDateTime+",\n:TransactionReference"+TransactionReference+"\n}";
-    }
+  public void setProprietaryBankTransactionCode(ProprietaryBankTransactionCode proprietaryBankTransactionCode) { this.proprietaryBankTransactionCode = proprietaryBankTransactionCode; }
 }

@@ -2,69 +2,33 @@ package com.cbs.demo;
 
 public class Account
 {
-    private String Nickname;
+  private String accountId;
 
-    private String AccountId;
+  public String getAccountId() { return this.accountId; }
 
-    private Acc Acc;
+  public void setAccountId(String accountId) { this.accountId = accountId; }
 
-    private Servicer Servicer;
+  private String nickname;
 
-    private String Currency;
+  public String getNickname() { return this.nickname; }
 
-    public String getNickname ()
-    {
-        return Nickname;
-    }
+  public void setNickname(String nickname) { this.nickname = nickname; }
 
-    public void setNickname (String Nickname)
-    {
-        this.Nickname = Nickname;
-    }
+  private Acc acc;
 
-    public String getAccountId ()
-    {
-        return AccountId;
-    }
+  public Acc getAcc() { return this.acc; }
 
-    public void setAccountId (String AccountId)
-    {
-        this.AccountId = AccountId;
-    }
+  public void setAcc(Acc acc) { this.acc = acc; }
 
-    public Acc getAcc ()
-    {
-        return Acc;
-    }
+  private Servicer servicer;
 
-    public void setAcc (Acc Acc)
-    {
-        this.Acc = Acc;
-    }
+  public Servicer getServicer() { return this.servicer; }
 
-    public Servicer getServicer ()
-    {
-        return Servicer;
-    }
+  public void setServicer(Servicer servicer) { this.servicer = servicer; }
 
-    public void setServicer (Servicer Servicer)
-    {
-        this.Servicer = Servicer;
-    }
+  private String currency;
 
-    public String getCurrency ()
-    {
-        return Currency;
-    }
+  public String getCurrency() { return this.currency; }
 
-    public void setCurrency (String Currency)
-    {
-        this.Currency = Currency;
-    }
-
-    @Override
-    public String toString()
-    {
-        return "{:Nickname"+Nickname+",\n:AccountId"+AccountId+",\n:Acc"+Acc+",\n:Servicer"+Servicer+",\n:Currency"+Currency+"\n}";
-    }
+  public void setCurrency(String currency) { this.currency = currency; }
 }

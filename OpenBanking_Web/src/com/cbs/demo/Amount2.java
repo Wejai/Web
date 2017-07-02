@@ -1,6 +1,6 @@
 package com.cbs.demo;
 
-public class Amount
+public class Amount2
 {
   private String amount;
 

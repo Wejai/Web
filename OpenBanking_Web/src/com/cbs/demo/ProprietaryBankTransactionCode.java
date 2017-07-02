@@ -2,33 +2,15 @@ package com.cbs.demo;
 
 public class ProprietaryBankTransactionCode
 {
-    private String Issuer;
+  private String code;
 
-    private String Code;
+  public String getCode() { return this.code; }
 
-    public String getIssuer ()
-    {
-        return Issuer;
-    }
+  public void setCode(String code) { this.code = code; }
 
-    public void setIssuer (String Issuer)
-    {
-        this.Issuer = Issuer;
-    }
+  private String issuer;
 
-    public String getCode ()
-    {
-        return Code;
-    }
+  public String getIssuer() { return this.issuer; }
 
-    public void setCode (String Code)
-    {
-        this.Code = Code;
-    }
-
-    @Override
-    public String toString()
-    {
-        return "{:Issuer"+Issuer+",\n:Code"+Code+"\n}";
-    }
+  public void setIssuer(String issuer) { this.issuer = issuer; }
 }

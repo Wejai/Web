@@ -2,21 +2,9 @@ package com.cbs.demo;
 
 public class Links
 {
-    private String self;
+  private String self;
 
-    public String getSelf ()
-    {
-        return self;
-    }
+  public String getSelf() { return this.self; }
 
-    public void setSelf (String self)
-    {
-        this.self = self;
-    }
-
-    @Override
-    public String toString()
-    {
-        return "{:self"+self+"\n}";
-    }
+  public void setSelf(String self) { this.self = self; }
 }

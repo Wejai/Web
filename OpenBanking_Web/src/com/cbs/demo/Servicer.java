@@ -2,33 +2,15 @@ package com.cbs.demo;
 
 public class Servicer
 {
-    private String Identification;
+  private String identification;
 
-    private String SchemeName;
+  public String getIdentification() { return this.identification; }
 
-    public String getIdentification ()
-    {
-        return Identification;
-    }
+  public void setIdentification(String identification) { this.identification = identification; }
 
-    public void setIdentification (String Identification)
-    {
-        this.Identification = Identification;
-    }
+  private String schemeName;
 
-    public String getSchemeName ()
-    {
-        return SchemeName;
-    }
+  public String getSchemeName() { return this.schemeName; }
 
-    public void setSchemeName (String SchemeName)
-    {
-        this.SchemeName = SchemeName;
-    }
-
-    @Override
-    public String toString()
-    {
-        return "{:Identification"+Identification+",\n:SchemeName"+SchemeName+"\n}";
-    }
+  public void setSchemeName(String schemeName) { this.schemeName = schemeName; }
 }

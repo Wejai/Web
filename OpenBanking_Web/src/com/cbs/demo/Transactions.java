@@ -77,7 +77,7 @@ public class Transactions
     @Override
     public String toString()
     {
-        return "{rev:"+_rev+",\nid:"+_id+",\n:tid="+tid+",\n:Data"+Data+",\n:Links"+Links+",\n:Meta="+Meta+"\n}";
+        return "{rev:"+_rev+",\nid:"+_id+",\n:tid="+tid+",\n:Data"+Data+",\n:Links"+Links+",\n:Meta"+Meta+"\n}";
     }
 }
 

@@ -2,21 +2,9 @@ package com.cbs.demo;
 
 public class Meta
 {
-    private String totalpages;
+  private String totalpages;
 
-    public String getTotalpages ()
-    {
-        return totalpages;
-    }
+  public String getTotalpages() { return this.totalpages; }
 
-    public void setTotalpages (String totalpages)
-    {
-        this.totalpages = totalpages;
-    }
-
-    @Override
-    public String toString()
-    {
-        return "{:totalpages"+totalpages+"\n}";
-    }
+  public void setTotalpages(String totalpages) { this.totalpages = totalpages; }
 }

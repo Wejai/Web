@@ -1,45 +1,22 @@
 package com.cbs.demo;
 
-public class Balance {
-	private Amount Amount;
+public class Balance
+{
+  private String creditDebitIndicator;
 
-    private String Type;
+  public String getCreditDebitIndicator() { return this.creditDebitIndicator; }
 
-    private String CreditDebitIndicator;
+  public void setCreditDebitIndicator(String creditDebitIndicator) { this.creditDebitIndicator = creditDebitIndicator; }
 
-    public Amount getAmount ()
-    {
-        return Amount;
-    }
+  private Amount amount;
 
-    public void setAmount (Amount Amount)
-    {
-        this.Amount = Amount;
-    }
+  public Amount getAmount() { return this.amount; }
 
-    public String getType ()
-    {
-        return Type;
-    }
+  public void setAmount(Amount amount) { this.amount = amount; }
 
-    public void setType (String Type)
-    {
-        this.Type = Type;
-    }
+  private String type;
 
-    public String getCreditDebitIndicator ()
-    {
-        return CreditDebitIndicator;
-    }
+  public String getType() { return this.type; }
 
-    public void setCreditDebitIndicator (String CreditDebitIndicator)
-    {
-        this.CreditDebitIndicator = CreditDebitIndicator;
-    }
-
-    @Override
-    public String toString()
-    {
-        return "{:Amount"+Amount+",\n:Type"+Type+",\n:CreditDebitIndicator"+CreditDebitIndicator+"\n}";
-    }
+  public void setType(String type) { this.type = type; }
 }

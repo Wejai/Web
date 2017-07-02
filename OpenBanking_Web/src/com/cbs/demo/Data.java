@@ -2,48 +2,21 @@ package com.cbs.demo;
 
 public class Data
 {
-    private Account[] Account;
-    private Beneficiary[] Beneficiary;
-    private Transaction[] Transaction;
+  private Transaction transaction;
 
-    public Transaction[] getTransaction ()
-    {
-        return Transaction;
-    }
+  public Transaction getTransaction() { return this.transaction; }
 
-    public void setTransaction (Transaction[] Transaction)
-    {
-        this.Transaction = Transaction;
-    }
-    
-    public Beneficiary[] getBeneficiary ()
-    {
-        return Beneficiary;
-    }
+  public void setTransaction(Transaction transaction) { this.transaction = transaction; }
 
-    public Account[] getAccount ()
-    {
-        return Account;
-    }
+  private Beneficiary beneficiary;
 
-    public void setAccount (Account[] Account)
-    {
-        this.Account = Account;
-    }
-    
-    public void setBeneficiary (Beneficiary[] Beneficiary)
-    {
-        this.Beneficiary = Beneficiary;
-    }
+  public Beneficiary getBeneficiary() { return this.beneficiary; }
 
-    @Override
-    public String toString()
-    {
-    	if (Beneficiary!=null) 
-    		return "{:Beneficiary"+Beneficiary+"\n}";
-    	else if (Transaction!=null)
-    		return "{:Transaction"+Transaction+"\n}";
-    	else
-    		return "{:Account"+Account+"\n}";
-    }
+  public void setBeneficiary(Beneficiary beneficiary) { this.beneficiary = beneficiary; }
+
+  private Account account;
+
+  public Account getAccount() { return this.account; }
+
+  public void setAccount(Account account) { this.account = account; }
 }
